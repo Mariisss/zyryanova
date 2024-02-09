@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d4d4d8;
+}
+header{
+    background-color: #095028;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.navigate ul{
+    display: flex;
+}
+.navigate ul>li{
+    margin-right: 40px;
+    list-style: none;
+}
+.navigate ul>li>a{
+    text-decoration: none;
+    color: #e4e4e7;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nomer {
+    color: #e4e4e7;
+    line-height: 1;
+}
+.nomer a{
+    color: #e4e4e7;
+    text-decoration: none;
+}
+.zapis{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)),url(../img/img1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+/* .zapis:before {
+	content: '';
+	width: 100%;
+	height: 90vh;
+	position: absolute;
+	background-color:rgba(0, 0, 0, .5);
+} */
+.zapis-flex{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+.zapis-zaglav h2{
+    text-align: center;
+    color: #e4e4e7;
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.zapis-info{
+    color: #e4e4e7;
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.zapis-info p{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4e4e7;
+    width: 300px;
+    text-align: center;
+}
+.zapis-forma h3{
+    font-size: 32px;
+    line-height: 1.37;
+    font-weight: 700;
+    text-align: center;
+    color: #e4e4e7;
+    /* margin-top: 60px; */
+    padding-bottom: 40px;
+}
+.price{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.price h1{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.price p{
+    padding-bottom: 20px;
+    font-size: 21px;
+}
+.works{
+    background-color: #e4e4e7;
+    padding-bottom: 60px;
+}
+.works-master{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.works-master h1{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.works-master p{
+    padding-bottom: 20px;
+    font-size: 21px;
+}
+.about{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.about h1{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+
+}
+.info p{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: left;
+}
+.info{
+    margin-bottom: 60px;
+    background-color: #e4e4e7;
+    padding: 20px;
+    width: 400px;
+    border-radius: 7px;
+    margin-right: 20px;
+}
+.block-info{
+    display: flex;
+}
+.otzov{
+    background-color: #e4e4e7;
+}
+.otzovi{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.otzovi h1{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.otzovi p{
+    padding-bottom: 20px;
+    font-size: 21px;
+}
+.otz{
+    background-color: #d4d4d8;
+    width: 45%;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.block-otzova{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.zapis-forma {
+    background-color: #095028af;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+#appointmentForm {
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+#phoneInput {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+#nameInput{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#successMessage {
+    display: none;
+    padding: 20px;
+    background-color: #28a745;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.work-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.work-image {
+    flex: 0 0 calc(33.33% - 20px); /* Размещаем по 3 в ряд, учитывая промежуток 20px между ними */
+    position: relative;
+}
+
+.work-image img {
+    width: 100%; /* Одинаковая ширина для всех изображений */
+    height: 250px; /* Автоматическая высота, чтобы не искажать пропорции */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Добавляем боковую тень */
+}
+/* Стили для контейнера с карточками */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Стили для каждой карточки */
+.service-card {
+    flex: 0 1 calc(30% - 20px); /* Ширина карточки, 30% с отступами между ними */
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Тень */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out; /* Анимация при наведении */
+}
+
+/* Стили для изображения внутри карточки */
+.service-card img {
+    width: 300px; /* Фиксированная ширина изображения */
+    height: 200px; /* Фиксированная высота изображения */
+    object-fit: cover; /* Масштабирование изображения с сохранением соотношения сторон */
+}
+
+/* Стили для заголовка и текста */
+.service-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Стили при наведении на карточку */
+.service-card:hover {
+    transform: scale(1.05); /* Увеличение размера при наведении */
+}
+.kont{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.kontakt{
+    margin-top: 60px;
+}
+.kontabout{
+    line-height: 3;
+}
+.kabout1 p{
+    border-bottom: 1px solid #000000;
+}
+.kabout1 a{
+    text-decoration: none;
+    color: black;
+}
+.kabout2 p{
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid black;
+}
